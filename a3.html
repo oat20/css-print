@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE A3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            font: 12pt "Sarabun, sans-serif";
+        }
+    
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+    
+        .page {
+            width: 29.7cm;
+            min-height: 42.0cm;
+            padding: 1cm;
+            margin: 1% auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .subpage {
+            padding: 1cm;
+            border: 5px red solid;
+            height: 256mm;
+            outline: 2cm #FFEAEA solid;
+        }
+    
+        @page {
+            size: A3;
+            margin: 0;
+        }
+    
+        @media print {
+            .page {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body onload="window.print();">
+    <div class="page">
+        Hello World สวัสดีชาวโลก
+    </div>
+</body>
+</html>
