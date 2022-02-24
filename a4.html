@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRINT A4</title>
+    <style>
+        body{
+            font-family: 'sans-serif';
+        }
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            body{
+                font-family: 'sans-serif';
+                font-size: 14pt;
+            }
+            .page {
+                padding-top: 10mm;
+                padding-bottom: 10mm;
+                padding-left: 15mm;
+                padding-right: 15mm;
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+                width: 210mm;
+                min-height: 297mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        Hello World
+    </div>
+</body>
+</html>
