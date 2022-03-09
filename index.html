@@ -37,6 +37,23 @@
   outline: 2cm #FFEAEA solid;
 }
 
+  .watermark{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: #0d745e;
+  font-size: 50px;
+  font-weight: bold;
+  /*display: grid;*/
+  justify-content: center;
+  align-content: center;
+  opacity: 0.2;
+  transform: rotate(-45deg);
+}
+
 @page {
   size: A4;
   margin: 0;
@@ -56,11 +73,12 @@
 }
     </style>
 </head>
-<body onload="window.print();">
+<body>
     <!-- <div class="book"> -->
         <div class="page">
           <!-- <div class="subpage">Page 1/2</div> -->
           Hello World สวัสดีชาวโลก
+          <div class="watermark">ต้นฉบับ</div>
         </div>
         <!-- <div class="page">
           <div class="subpage">Page 2/2</div>
